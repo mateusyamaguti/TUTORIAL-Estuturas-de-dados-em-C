@@ -16,12 +16,12 @@
 - [13 - Vetores Estáticos](#13---Vetores-Estáticos)
 - [14 - Vetores e Aritmética de Ponteiros](#14---Vetores-e-Aritmética-de-Ponteiros)
 - [15 - Tipos de Alocação de Memória](#15---Tipos-de-Alocação-de-Memória)
-- [17 - Vetores: Exemplos Práticos](#17---Vetores:-Exemplos-Práticos)
+- [17 - Vetores - Exemplos Práticos](#17---Vetores---Exemplos-Práticos)
 - [20 - Matrizes Estáticas](#20---Matrizes-Estáticas)
 - [21 - Matrizes Dinámicas](#21---Matrizes-Dinámicas)
 - [22 - Matrizes 3D](#22---Matrizes-3D)
 - [25 - Row e Column Major Order](#25---Row-e-Column-Major-Order)
-- [27 - Structs: Definição e Exemplos](#27---Structs:-Definição-e-Exemplos)
+- [27 - Structs - Definição e Exemplos](#27---Structs---Definição-e-Exemplos)
 - [28 - Alocação Estática e Dinâmica de Structs](#28---Alocação-Estática-e-Dinâmica-de-Structs)
 - [29 - Codificando um CRUD de Structs](#29---Codificando-um-CRUD-de-Structs)
 
@@ -135,7 +135,7 @@ float* v = (float*) malloc(n * sizeof(float));
 ```
 O interessante é que v é um ponteiro do tipo float, que é alocado na stack, porém aponto todas as informações na HEAP.
 
-## 17 - Vetores: Exemplos Práticos
+## 17 - Vetores - Exemplos Práticos
 Esse tópico é abordado uma prática de programação que compara a alocação de memória estática com a dinâmica. Segue instruções:<br>
 Programa com vetores estáticos:
 - Crie uma função que recebe o ponteiro de um vetor e seu tamanho e imprima os elementos do vetor
@@ -290,7 +290,7 @@ O processador não acessa a RAM byte por byte quando precisa de dados. Em vez di
 **Por que percorrer linha-coluna é mais eficiente:**<br>
 Quando você percorre a matriz usando for(i) for(j) (linha primeiro, coluna depois), você está acessando elementos sequencialmente na memória: matriz[0][0], depois matriz[0][1], depois matriz[0][2], etc. Como esses elementos estão fisicamente próximos (na mesma cache line), o processador já tem os próximos elementos disponíveis no cache quando você precisar deles. Isso resulta em "cache hits" - o processador encontra o dado que precisa rapidamente no cache, sem ter que buscar na RAM.
 
-## 27 - Structs: Definição e Exemplos
+## 27 - Structs - Definição e Exemplos
 Uma **struct** em linguagem C é uma estrutura de dados que permite agrupar vários dados sobre o mesmo nome.<br>
 Sintaxe básica de uma struct
 ```c
